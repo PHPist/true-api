@@ -1,0 +1,16 @@
+version: '3'
+services:
+    app:
+        build:
+            dockerfile: Dockerfile
+        image: sign-api
+        ports:
+            - '8016:80'
+        environment:
+            TZ: 'Europe/Moscow'
+        volumes:
+            - './app/public:/var/www/html'
+            - './app/vendor:/var/www/html/vendor'
+        restart: always
+
+

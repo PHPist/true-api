@@ -1,0 +1,22 @@
+{
+    "config": {
+        "platform": {
+            "php": "7.4.33"
+        }
+    },
+    "name": "getter/app",
+    "autoload": {
+        "psr-4": {
+            "Getter\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Getter",
+            "email": "felix.getter@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "7.7"
+    }
+}
